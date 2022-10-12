@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Arial;
+}
+
+.slider-container {
+    margin: 40px auto;
+    width: 800px;
+    height: 250px;
+    position: relative;
+}
+
+.slider-container img {
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+}
+
+.slider-container img.active{
+    opacity:1
+}
+.slider-container .slide-number{
+    position: absolute;
+    top:-30px;
+    left:0px;
+    width:140px;
+    background-color: aquamarine;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.slider-controls{
+    margin: auto;
+    width:800px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-controls .prev,
+.slider-controls .next{
+    padding: 5px;
+    cursor: pointer;
+    background-color: aquamarine;
+    width: 100px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled{
+    background-color:rgb(96, 155, 155);
+    cursor: no-drop;
+}
+.slider-controls .indicators{
+    display: block;
+}
+.slider-controls .indicators ul{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.slider-controls .indicators ul li{
+    cursor: pointer;
+    width:40px;
+    padding: 5px;
+    background-color:white;
+    list-style: none;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.slider-controls .indicators ul li.active{
+    background-color: aqua;
+}

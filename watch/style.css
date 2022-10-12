@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+.container {
+    margin:100px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: gold;
+    width:300px;
+    height:300px;
+    outline:5px solid red;
+    border:10px solid gray;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container .time{
+    margin-bottom: 5px;
+}
+.container .time span{
+    font-size: 35px;
+}

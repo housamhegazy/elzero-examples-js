@@ -1,0 +1,25 @@
+.fa-arrow-up{
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    transition: 0.3s;
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fa-arrow-up.show{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+

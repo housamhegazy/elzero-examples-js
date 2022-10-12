@@ -1,0 +1,11 @@
+{
+  "path-intellisense.autoTriggerNextSuggestion": false,
+  "window.autoDetectColorScheme": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": false,
+  "files.autoSave": "onWindowChange",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
+}
